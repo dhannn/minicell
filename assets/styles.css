@@ -1,0 +1,90 @@
+html {
+    background-color: #E9FFF9;
+    font-family: 'Inter', sans-serif;
+}
+
+h1, h2, p {
+    color: #1D3354;
+    font-family: 'Roboto Mono';
+}
+
+p { 
+    font-weight: 400;
+    margin-top: -1%;
+}
+
+h1, h2, p, canvas {
+    margin-left: 1%;
+}
+
+canvas {
+    outline: none;
+    border: solid 1px #1D3354;
+    border-radius: 5px;
+    background-color: #467599;
+}
+
+.animation-button {
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    color: #1D3354;
+}
+
+.animation-button i {
+    font-size: 2rem;
+}
+
+.input-element {
+    margin: 10px 0px;
+    font-size: 1rem;
+}
+
+.text-button {
+    padding: 12px 16px;
+    border: solid 1px gray;
+    border-radius: 5px;
+    background-color: #1D3354;
+    color: #E9FFF9;
+    cursor: pointer;
+}
+
+#delay-input {
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+input[type="file"]::file-selector-button {
+    padding: 12px 16px;
+    border: solid 1px gray;
+    border-radius: 5px;
+    background-color: #1D3354;
+    color: #E9FFF9;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.upload {
+    position: absolute;
+    left: 0;
+}
+
+.instructions {
+    position: absolute;
+    left: 58%;
+    top: 12%;
+    width: 30%;
+}
+
+.inputs {
+    position: absolute;
+    width: 40%;
+    top: 60%;
+    left: 58%;
+}
+
+.animation-button-container {
+    position: absolute;
+    top: 6%;
+    left: 46.5%;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MiniCell | A minimal ECA simulator</title>
+        <script src="assets/scripts/CellularAutomaton.js" defer></script>
+        <script src="assets//scripts/input.js" defer></script>
+        <script src="assets/scripts/compute.js" defer></script>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400&family=Roboto+Mono:wght@100;400&display=swap');
+        </style>
+        <link rel="stylesheet" href="assets/fontawesome-free-6.4.2-web/css/all.css">
+        <link rel="stylesheet" href="assets/styles.css">
+    </head>
+
+    <body>
+        <h1>MiniCell</h1>
+        <p>A minimal Elementary Cellular Automaton simulator</p>
+        <canvas id="machine-canvas" width="1000" height="800">
+        </canvas>
+        
+        <form class="inputs">
+            <input class="input-element" id="machine-input" type="file" accept="application/json"/>
+            <br>
+            <div class="input-element">
+                <label style="margin-bottom: 20px; font-weight: 400;" for="delay-input">Animation delay (in ms)</label>
+                <br>
+                <input id="delay-input" value="100" type="number"/>
+            </div>
+            <button id="submit-button" class="text-button input-element" type="submit">
+                <i style="margin-right: 5px;" class="fa-solid fa-circle-check"></i>
+                Load
+            </button>
+        </form>
+
+        <div class="instructions">
+            <h2>What is a Cellular Automaton?</h2>
+            <p style="line-height: 1.5rem;">A cellular automaton (CA) is an abstract model of computation consists of a grid of tiles. Each tile consists of a state, usually represented as a color. The state is determined by its neighboring tiles which may differ from CA to CA.</p>
+            <p style="line-height: 1.5rem;">What we have here is a special case of CA--the elementary CA. Popularized by Stephen Wolfram, ECAs are one-dimensional CAs. Despite its simplicity, ECAs (and CAs in general) display complex behaviors.</p>
+            <p style="line-height: 1.5rem;">Play with this minimal sandbox and discover the world of CAs! Instructions are in <a href="">the README file.</a></p>
+        </div>
+            
+        <div class="animation-button-container">
+            <button class="animation-button" id="play-button" style="display: none;"><i class="fa-solid fa-circle-play"></i></button>
+            <button class="animation-button" id="stop-button" style="display: none;"><i class="fa-solid fa-circle-stop"></i></button>
+            <button class="animation-button" id="reset-button" style="display: none;"><i class="fa-solid fa-arrow-rotate-left"></i></button>
+        </div>
+    </body>
+</html>
