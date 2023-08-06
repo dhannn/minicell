@@ -80,3 +80,5 @@ The following is a ECA that everything to the right in every time step.
 The previous machine results to the following output for the first 
 30 generations:
 ![The output of the previous machine](./assets/sample.png).
+
+More examples are in the `./sample` directory.
