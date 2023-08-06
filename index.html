@@ -26,11 +26,17 @@
                 <br>
                 <input id="delay-input" value="100" type="number"/>
             </div>
+            <input id="show-state-input" type="checkbox">Show cell state?</input>
+            <br>
             <button id="submit-button" class="text-button input-element" type="submit">
                 <i style="margin-right: 5px;" class="fa-solid fa-circle-check"></i>
                 Load
             </button>
         </form>
+
+        <div class="generation-container">
+            <h1 class="generation-heading"></h1>
+        </div>
 
         <div class="instructions">
             <h2>What is a Cellular Automaton?</h2>
@@ -40,8 +46,10 @@
         </div>
             
         <div class="animation-button-container">
-            <button class="animation-button" id="play-button" style="display: none;"><i class="fa-solid fa-circle-play"></i></button>
-            <button class="animation-button" id="stop-button" style="display: none;"><i class="fa-solid fa-circle-stop"></i></button>
+            <button class="animation-button" id="play-button" style="display: none;"><i class="fa-solid fa-play"></i></button>
+            <button class="animation-button" id="pause-button" style="display: none;"><i class="fa-solid fa-pause"></i></button>
+            <button class="animation-button" id="step-button" style="display: none;"><i class="fa-solid fa-forward-step"></i></button>
+            <button class="animation-button" id="stop-button" style="display: none;"><i class="fa-solid fa-stop"></i></button>
             <button class="animation-button" id="reset-button" style="display: none;"><i class="fa-solid fa-arrow-rotate-left"></i></button>
         </div>
     </body>

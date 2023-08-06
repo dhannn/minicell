@@ -1,6 +1,7 @@
 let submitButton = document.querySelector('#submit-button');
 let machineInput = document.querySelector('#machine-input');
 let delayInput = document.querySelector('#delay-input');
+let showStateInput = document.querySelector('#show-state-input');
 let canvas = document.querySelector('#machine-canvas');
 
 submitButton.addEventListener('click', handleSubmit);
@@ -25,6 +26,7 @@ function parseMachineInput() {
 function initializeDisplay() {
     CellularAutomaton.setDelay(delayInput.value);
     CellularAutomaton.setCanvas(canvas);
+    CellularAutomaton.setShowState(showStateInput.checked);
     CellularAutomaton.initialDraw();
 }
 

@@ -86,5 +86,15 @@ input[type="file"]::file-selector-button {
 .animation-button-container {
     position: absolute;
     top: 6%;
-    left: 46.5%;
+    left: 45.5%;
+}
+
+.generation-container {
+    position: absolute;
+    bottom: 5%;
+    left: 40%;
+}
+
+.generation-container * {
+    color: white;
 }
