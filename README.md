@@ -24,7 +24,7 @@ The application is also available at https://minicell.netlify.app/.
 
 The file is simply in JSON format with two main properties--definition and display.
 
-### Machine Definiton
+### Machine Definition
 
 The definition property contains the specified ECA model. Specifically, it 
 contains the list of states, the ruleset and the initial configuration.
