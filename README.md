@@ -1,6 +1,8 @@
 # MiniCell
 MiniCell is a minimal interface for an ECA simulator.
 
+It is developed by **Daniel III Ramos** and **Rommel Salen**.
+
 Since MiniCell is designed to be a minimal interface, we simply use vanilla HTML,
 CSS and JavaScript for the application. Thus, anyone with the source code can 
 simply run in their browser by clicking `index.html` as the entry point. 
